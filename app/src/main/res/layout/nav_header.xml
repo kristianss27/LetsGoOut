@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="?attr/colorPrimaryDark"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="start">
+
+
+    <ImageView
+        android:id="@+id/imgProfileHeader"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        tools:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/imgProfileHeader"
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Grisel Sequera"
+        android:layout_marginLeft="5dp"
+        style="@style/CustomeFont"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+</RelativeLayout>

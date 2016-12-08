@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvBusinesses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_form"
+        app:layout_anchor="@id/rvBusinesses"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_anchorGravity="bottom|right|end"
+        app:fabSize="normal"
+        app:backgroundTint="@color/background"
+        android:layout_alignParentRight="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnSaveList"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_save"
+        app:layout_anchor="@id/rvBusinesses"
+        app:layout_anchorGravity="bottom|right"
+        app:fabSize="normal"
+        app:backgroundTint="@color/background"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="62dp"
+        android:layout_alignBottom="@+id/btnRequest"
+        android:layout_alignStart="@+id/btnRequest"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

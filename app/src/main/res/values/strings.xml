@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">WantToKnow</string>
+    <string name="facebook_app_id">213702469057898</string>
+    <string name="gcm_sender_id">id:138316439712</string>
+    <string name="warning_login">Email and Paswword cannot be empty</string>
+    <string name="warning_signup">Email and Paswword cannot be empty</string>
+    <string name="send_message">Send message</string>
+    <string-array name="message_options">
+        <item>Write a general message to</item>
+        <item>Write different messages to everyone</item>
+    </string-array>
+    <string name="search_title">What are you looking for</string>
+    <string name="action_sort">Sort by Name</string>
+    <string name="no_conection">Conection failed</string>
+    <string name="no_address">Address no found</string>
+    <string name="questionary_description">Give a description</string>
+    <string name="next">Next</string>
+    <string name="app_font">Helvetica Neue</string>
+    <string name="interested_in">Are you interested in?</string>
+    <string name="planning">What are you planning?</string>
+    <string name="when">When would you want to do it?</string>
+    <string name="how_get_answer">How would you like to get the answer?</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="accept_calls">I accept calls</string>
+    <string name="back">Back</string>
+    <string name="notification_message">Check it out!</string>
+    <string name="continue_connected">Press and enjoy</string>
+    <string name="sign_up">New here? Sign up</string>
+    <string name="test_user_name">User name</string>
+    <string name="test_message">Here is the message</string>
+    <string name="test_request_body">I want to know if you guys get reservation on holidays.Actually what about
+        if I ask for dinner instead of lunch. I dont know what do you think. I just want to make sure I can go and enjoy with my family an amazing lunch counting with you</string>
+    <string name="send">Send</string>
+    <string name="message_hint">Write a message here!</string>
+    <string name="review">Reviews:</string>
+    <string name="test_menu_item">item menu</string>
+    <color name="background">#9c27b0</color>
+    <color name="buttons">@android:color/holo_blue_bright</color>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="snackbar_delete_text">Item deleted</string>
+    <string name="snackbar_action">Undo</string>
+    <string name="list_created">Good job!</string>
+    <string name="hangout">Going out!</string>
+    <string name="meetup">A meet up</string>
+    <string name="party">Go party!</string>
+    <string name="radio_free">Looking forward to...</string>
+    <string name="find_a_place">Find places in Yelp adding a postal code</string>
+    <string name="where">Where would you make it?</string>
+    <string name="test_plan_header_title">Going out!</string>
+    <string name="test_plan_description">I want to have fun definitely. Join me and lets take over the world</string>
+    <string name="test_plan_date">11/12/2016</string>
+    <string name="plan_purpouse">You have planned</string>
+    <string name="test_plan_purpouse">You have planned: Going out!</string>
+    <string name="have_planned">have planned</string>
+    <string name="add_time">Add the time</string>
+    <string name="locations">Locations</string>
+    <string name="search_postal_code">94115</string>
+</resources>

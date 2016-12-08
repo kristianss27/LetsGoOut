@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/buttons">
+
+    <ImageView
+        android:id="@+id/ivProfileOther"
+        android:contentDescription="Profile other"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:textSize="13sp"
+        android:id="@+id/tvBody"
+        android:autoLink="all"
+        tools:text="@string/test_request_body"
+        android:ellipsize="none"
+        android:textStyle="normal"
+        style="@style/CustomeFont"
+        android:layout_marginEnd="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivProfileMe"
+        android:contentDescription="My profile pic"
+        android:layout_marginStart="-64dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_launcher"/>
+
+</LinearLayout>

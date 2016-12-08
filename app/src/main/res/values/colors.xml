@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9B26AF</color>
+    <color name="colorPrimaryDark">#7A1EA1</color>
+    <color name="colorAccent">@android:color/holo_blue_bright</color>
+    <color name="controlActivated">#9B26AF</color>
+    <color name="controlNormal">#691A99</color>
+    <color name="controlHighlight">#7A1EA1</color>
+    <color name="pink">#FF4081</color>
+    <color name="dark_blue">#180065</color>
+    <color name="light_blue">#334ee9ff</color>
+    <color name="medium_green">#3d853e</color>
+    <color name="light_green">#3c2ae668</color>
+    <color name="black">#050406</color>
+</resources>

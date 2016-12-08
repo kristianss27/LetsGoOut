@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bussiness_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    android:fitsSystemWindows="true"
+    android:background="@color/buttons"
+    card_view:cardCornerRadius="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rlCard"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/business_thumb"
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/business_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/business_thumb"
+            android:text="Miku Sushi and Bar"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_below="@id/business_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/business_thumb">
+
+            <ImageView
+                android:id="@+id/iconLocation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                card_view:srcCompat="@mipmap/ic_location"
+                />
+
+            <TextView
+                android:id="@+id/business_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123 Main Street"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_below="@id/linear_layout"
+            android:layout_toRightOf="@id/business_thumb"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbVoteAverage"
+                style="@style/customRatingBar"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:scaleX=".3"
+                android:scaleY=".3"
+                android:isIndicator="true"
+                android:rating="5"
+                android:paddingLeft="2dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            card_view:srcCompat="@mipmap/ic_phone"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/business_phone" />
+
+
+        <TextView
+            android:id="@+id/business_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="(778) 321-4042" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvReviewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:layout_above="@+id/linear_layout4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/tvReviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/review"
+            android:textStyle="bold"
+            android:layout_above="@+id/linear_layout4"
+            android:layout_toStartOf="@+id/tvReviewCount"
+            android:layout_marginEnd="8dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

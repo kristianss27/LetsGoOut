@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeContainerThePlan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                tools:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/CustomeFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@id/imgPlan"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="@string/test_plan_purpouse" />
+
+                <TextView
+                    android:id="@+id/tvPlanDescription"
+                    style="@style/CustomeFont"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:text="@string/test_plan_description" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgCalendar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/rl_header"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_calendar" />
+
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/CustomeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_header"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imgCalendar"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:text="@string/test_plan_date" />
+
+            <View
+                android:id="@+id/lineDraw"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/imgCalendar"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/iconLocation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lineDraw"
+                android:layout_marginLeft="3dp"
+                android:src="@mipmap/ic_location" />
+
+            <TextView
+                android:id="@+id/tvLocations"
+                style="@style/CustomeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineDraw"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/iconLocation"
+                android:text="@string/locations"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/flList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iconLocation"></FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlYelpList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flList">
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>

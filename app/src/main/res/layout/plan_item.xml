@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:id="@+id/rlPlanItem">
+
+        <RelativeLayout
+            android:id="@+id/rlPlanInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imgPlan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_plan" />
+
+        <TextView
+            android:id="@+id/tvPlanTitle"
+            style="@style/CustomeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/imgPlan"
+            tools:text="@string/test_plan_header_title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlanDescription"
+            style="@style/CustomeFont"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPlanTitle"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/imgPlan"
+            tools:text="@string/test_plan_description"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imgCalendar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_calendar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/CustomeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_plan_date"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:layout_alignBaseline="@+id/tvPlanTitle"
+            android:layout_alignBottom="@+id/tvPlanTitle"
+            android:layout_toStartOf="@+id/imgCalendar" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlYelpList"
+            android:layout_below="@+id/rlPlanInfo"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content">
+
+            <!-- This is useful to test how every view looks before adding them programmatically
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_calendar"
+                    />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prueba yelp"
+                    android:layout_toRightOf="@+id/img1" />
+
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_below="@+id/img1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_calendar"
+                    />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="prueba yelp"
+                    android:layout_below="@+id/img1"
+                    android:layout_toEndOf="@+id/img2" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_below="@+id/img2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_calendar"
+                    />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="prueba yelp"
+                    android:layout_below="@+id/img2"
+                    android:layout_toEndOf="@+id/img3" />
+
+
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_time"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:text="9:28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_toStartOf="@+id/time" />
+                -->
+        </RelativeLayout>
+
+
+</RelativeLayout>

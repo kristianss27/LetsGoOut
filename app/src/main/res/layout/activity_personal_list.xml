@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context="com.codepathgroup5.activities.PersonalPlanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear_layout_header"
+            android:layout_below="@id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp" >
+
+            <ImageView
+                android:id="@+id/imgPlan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_plan"
+                />
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomeFont"
+                android:layout_toEndOf="@id/imgPlan"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="@string/test_plan_header_title"
+                />
+
+            <TextView
+                android:id="@+id/tvPlanDescription"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                style="@style/CustomeFont"
+                android:textSize="14sp"
+                tools:text="@string/test_plan_description"
+                android:textStyle="normal"
+                android:layout_below="@+id/tvTitle"
+                android:layout_toEndOf="@+id/imgPlan"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:id="@+id/imgCalendar"
+                android:layout_below="@id/tvPlanDescription"
+                android:layout_toEndOf="@id/imgPlan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomeFont"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:text="@string/test_plan_date"
+                android:layout_toEndOf="@+id/imgCalendar"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@+id/imgPlan" />
+
+        </RelativeLayout>
+
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="false"
+            app:pstsDividerColor="@android:color/white"
+            app:pstsIndicatorColor="@android:color/white"
+            app:pstsUnderlineColor="@android:color/white"
+            app:pstsIndicatorHeight="3dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/linear_layout_header" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_below="@id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

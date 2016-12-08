@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/imgYelp"
+        android:layout_below="@id/tvLabel"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:src="@drawable/yelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPostalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomeFont"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:text="@string/find_a_place"
+        android:layout_below="@+id/imgYelp"
+        android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:id="@+id/etPostalCode"
+            android:layout_below="@id/tvPostalCode"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:cursorVisible="true"
+            android:hint="@string/search_postal_code"
+            style="@style/CustomeFont"
+            android:textSize="20sp"
+            android:textColorHighlight="@color/colorPrimary"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textStyle="normal"
+            />
+
+
+    <Button
+        android:text="Last"
+        style="@style/QuestionaryButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:id="@+id/btnBack" />
+
+    <Button
+        android:text="Next"
+        style="@style/QuestionaryButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:id="@+id/btnNext" />
+
+
+</RelativeLayout>
+
