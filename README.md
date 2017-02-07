@@ -1,34 +1,28 @@
 # Lets Go out
 # CodePath Project
 
-**Lets Go Out app** is an android app that allow to the user find a bunch of information using yelp to ask about some services the businesses on Yelp offer nowaday. Normally a user wants to do some activities like dancing or even organizing a part. Through the app they dont need to open Yelp App and checks all the places that are favourable for him/her to pursue their interest and contacts every place and its timings. With the "Wanttoknow" app, the user can select the list of the places, from the overall list and send a message to all of the selected places at once, stating that the user wants to learn dancing or the user wants to organize a birthday party.
-This app uses the Yelp API to retrieve information on the Ratings and Location with the Phone Number and the Name of the Place. 
+**Lets Go Out** is an android app that allows you to plan out any activity like hang out, go out, have dinner etc. in advance and keep informing your friends with it. The app use "Facebook Login" to allow the user signs into the app and uses several features this social media has in order to connect friends who are using "Let's go out" also. Once the user sign in, the app shows a list of the upcoming plans (In case any has been configured) and will have a floating button to add a "New plan".
 
-Time spent: **** hours spent in total
-
-App Flow - 
-User Sign up / Login in the App as a Person or Businesses, this second registered on Yelp as required
-User 1: Any Person that would use the app to contact or get a service from any a business registered on Yelp. This user will use the email as “User Name” and define a password to Sign up on our App.Then, They can Log in on the app with the same information registered
-User 2: All businesses being registered on Yelp
-
-
-Flow for the User 1:
-Once the user 1 was registered on our app the app will show the Search Screen
-On the search screen the user 1 can search anything using the Search Bar
-After writing on the Search Bar, the user can get a result list with all the businesses related to the searching
-The user can select any business with the button “Add” and this button will add the business to a New list called Personal List.
-The user can hit the button “Next” to Jump to the Personal List
-Once on the Personal List, the user can verify if the first selection of businesses was correct. In case it wasn’t right, the user can swipe to the left to delete the service chosen before
-If the user is sure of all the selections, the user can hit the button “with a envelop” to send a message and the app will show an screen with all the options to write message by a notification and create a door to open a Chat 
-Important note: We are assuming for the first release that both users are using the app. 
-The user will wait until getting an answer from every business contacted.
-After the business answered.
+The app provides a simple questionary to give a description of what the user is planning, when (the date) and where (writing a postal code) to then show a search screen that utilizes "Yelp" in other to show and check places related to the user interest. Once the user has choosen at least one possibly place, the app will show a preview of the plan with all the previous info and decide add or no the plan to the main list. At the end, the app will automatically notificate to the friends and they can join the plan.
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-* [x]	User can **sign in to the app** using OAuth login, via Email.
+* [x]	User can **sign into the app** using facebook login.
+* [x]	User can **add a plan** pushing a button and the app will launch a questionary with three basic forms that the user has to answer. Forms What are you planing? When(Date)? and Where(Postal code that define the city)
+  * [x] Form 1 - What are you planing?: Through radio buttons, the user will select one of the options and give a little description about it (Limited by a certain number of characters).
+  * [x] Form 2 - When?: Using a Date Picker, the user can setup the date.
+  * [x] Form 3 - Where?: Write a postal code to define the city.
+* [x]	The user can **search any type of business related to any interest ** by specifying a query and launching a search. Search displays a result list utilizing Yelp.api and It is endless scrollable.
+  * [x]	The result list diplays
+  
+  The user can **add or remove any result ** by dragging to the right to add or to the left to eliminate the item    displayed on the list.
+  * [x]	The user can **add or remove any result ** by dragging to the right to add or to the left to eliminate the item    displayed on the list.
+* [x] User can view more media as they scroll with [infinite pagination](http://guides.codepath.com/android/Endless-Scrolling-with-AdapterViews-and-RecyclerView). Number of images is unlimited.
+* [x]	User can **sign into the app** using facebook login.
+* [x]	User can **see the list of upcoming plans**.
+* [x]	User can **add a plan** using .
 * [x]	User can **view thge list of places from their based on the search criteria.
   * [x] User is displayed the username, name, and body for each recent activity.
   * [x] User can view more media as they scroll with [infinite pagination](http://guides.codepath.com/android/Endless-Scrolling-with-AdapterViews-and-RecyclerView). Number of images is unlimited.
@@ -42,15 +36,13 @@ The following **required** functionality is completed:
 * [x] The app provides a way to create that connection between customer and businesses through a list of request that when you can hit the item, you could open a chat with every service contacted
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories: http://i.imgur.com/KjpkuC6.gif
+Here's a walkthrough of implemented user stories: https://www.youtube.com/watch?v=2FQRCWqnOgM&t=77s
 
 <[Video Walkthrough} />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
 ## Notes
 
-Describe any challenges encountered while building the app.
+
 
 ## Open-source libraries used
 
