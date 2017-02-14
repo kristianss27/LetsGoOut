@@ -1,6 +1,5 @@
 # Lets Go out
-# CodePath Bootcamp Final Project
-# Developed By [Cristian Sanchez]https://www.linkedin.com/in/kristianss27
+# CodePath Final Project
 
 **Lets Go Out** is an android app that allows you to plan out any activity like hang out, go out, have dinner etc. in advance and keep informing your friends with it. The app use "Facebook Login" to allow the user signs into the app and uses several features this social media has in order to connect friends who are using "Let's go out" also. Once the user sign in, the app shows a list of the upcoming plans (In case any has been configured) and will have a floating button to add a "New plan".
 
