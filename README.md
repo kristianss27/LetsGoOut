@@ -1,5 +1,6 @@
 # Lets Go out
-# CodePath Project
+# CodePath Bootcamp Final Project
+# Developed By [Cristian Sanchez]https://www.linkedin.com/in/kristianss27
 
 **Lets Go Out** is an android app that allows you to plan out any activity like hang out, go out, have dinner etc. in advance and keep informing your friends with it. The app use "Facebook Login" to allow the user signs into the app and uses several features this social media has in order to connect friends who are using "Let's go out" also. Once the user sign in, the app shows a list of the upcoming plans (In case any has been configured) and will have a floating button to add a "New plan".
 
@@ -33,19 +34,23 @@ The following **required** functionality is completed:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories: https://www.youtube.com/watch?v=2FQRCWqnOgM&t=77s
-
-<[Video Walkthrough} />
+[Here's a walkthrough of implemented user stories](https://www.youtube.com/watch?v=2FQRCWqnOgM&t=77s)
 
 ## Notes
-
-
+This is a Solo Project developed by [Cristian Sanchez](https://www.linkedin.com/in/kristianss27)
+Using [Heroku Platform](https://www.heroku.com/) and the following libraries
 
 ## Open-source libraries used
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+- [Parse](http://parseplatform.github.io/docs/android/guide/)
+- [Facebook Sdk](https://developers.facebook.com/docs/android/)
+- [Butterknife](jakewharton.github.io/butterknife/)
+- [Gson](https://github.com/google/gson)
+- [Yelp Android](https://github.com/Yelp/yelp-android)
+- [Parceler](https://guides.codepath.com/android/Using-Parceler)
 
 ## License
 
