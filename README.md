@@ -15,7 +15,7 @@ The following **required** functionality is completed:
   * [x] Form 2 - When?: Using a Date Picker, the user can setup the date.
   * [x] Form 3 - Where?: Write a postal code to define the city.
 * [x] User can **search any type of business related to any interest** by specifying a query and launching a search. Search displays a result list utilizing Yelp.api.
-  * [ ] User can **scroll down to see more results**. The maximum number of results is limited by the Yelp API.
+  * [x] User can **scroll down to see more results**. The maximum number of results is limited by the Yelp API.
   * [x]	The result list diplays the image,name,location,rating,reviews and phone of the entity from Yelp.
   * [x] User can tap on any entity listed to view the contents in an embedded browser.
   * [x] User can **add or remove any result ** by dragging to the right to "add" or to the left to "eliminate" the item    displayed on the list.
@@ -30,6 +30,7 @@ The following **required** functionality is completed:
 * [x] User have **the plan list screen** populated by all the plans the user has added.
   * [x]	User can **check the information** by hitting any plan listed and go to the final description screen.
 * [x] User can **edit the information** using the editable final description screen. 
+* [x] The app **sends notification** to user's friends once the user add any plan to his/her plans list. 
 
 ## Video Walkthrough
 
