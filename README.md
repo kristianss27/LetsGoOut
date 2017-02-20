@@ -3,7 +3,7 @@
 
 **Lets Go Out** is an android app that allows you to plan out any activity like hang out, go out, have dinner etc. in advance and keep informing your friends with it. The app use "Facebook Login" to allow the user signs into the app and uses several features this social media has in order to connect friends who are using "Let's go out" also. Once the user sign in, the app shows a list of the upcoming plans (In case any has been configured) and will have a floating button to add a "New plan".
 
-The app provides a simple questionary to give a description of what the user is planning, when (the date) and where (writing a postal code) to then show a search screen that utilizes "Yelp" in other to show and check places related to the user interest. Once the user has choosen at least one possibly place, the app will show a preview of the plan with all the previous info and decide add or no the plan to the main list. At the end, the app will automatically notificate to the friends and they can join the plan.
+The app provides a simple questionary to give a description of what the user is planning, when (the date) and where (writing a postal code) to then show a search screen that utilizes "Yelp" in other to show and check places related to the user interest. Once the user has chosen at least one possibly place, the app will show a preview of the plan with all the previous info and decide add or no the plan to the main list. At the end, the app will automatically notificate to the friends and they can join the plan.
 
 ## User Stories
 
